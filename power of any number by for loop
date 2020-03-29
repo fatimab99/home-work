@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int b,exp,num=1;
+	cout<<"Enter the base:"<<endl;
+	cin>>b;
+	cout<<"Enter the exponent:"<<endl;
+	cin>>exp;
+	for(int i=1; i<=exp; i++)
+	{
+	   num=num*b;
+	}
+ cout<<b<<"^"<<exp<<"="<<num<<endl;
+
+
+ 
+  //return 0;
+ system("pause");
+}
+     
