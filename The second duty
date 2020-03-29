@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+     
+    int num1,num2;
+  cout«"Enter  the number1 and number 2:";
+  cin»num1»num2;
+  char opt;
+  float res;
+  cout«" specify the arithmetic operation your want?"«endl;
+  cout«"+) addition,"«endl;
+  cout«"-) subtraction,"«endl;
+  cout«"*) multiplication,"«endl;
+  cout«"/) division,"«endl;
+  cin»opt;
+  switch(opt){
+    case'+':
+
+    res=num1+num2; break;
+    case'-':
+
+    res=num2-num1; break;
+    case'*':
+
+    res=num1*num2; break;
+    case'/':
+
+      do{
+        cout«"\a"«"error "«endl;
+        cout«"please,enter another value :"«endl;
+        cin»num1»num2;
+        res=num2/num1; 
+        cout«num1«opt«num2«" = "« res« endl; break;
+      }while(num1!=0);
+
+    default: res=0;
+  }
+
+  cout«num1«opt«num2«" = "« res« endl;
+  
+  //return 0;
+  system("pause");
+}
